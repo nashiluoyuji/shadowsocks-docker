@@ -1,0 +1,8 @@
+version: "2"
+services:
+  libev:
+    image: kaive/shadowsocks-libev
+    expose:
+      - "443"
+    build: .
+    container_name: shadowsocks

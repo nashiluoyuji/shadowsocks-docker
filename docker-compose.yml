@@ -2,7 +2,8 @@ version: "2"
 services:
   libev:
     image: kaive/shadowsocks-libev
-    expose:
-      - "443"
+    ports:
+      - 443:443
+      - 443:443/udp
     build: .
     container_name: shadowsocks

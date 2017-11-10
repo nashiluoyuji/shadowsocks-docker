@@ -1,6 +1,6 @@
 FROM alpine:3.6
 
-LABEL maintainer="Kaive Young <Kaive Young@gmail.com>"
+LABEL maintainer="Kaive Young <KaiveYoung@gmail.com>"
 
 ARG TZ='Asia/Shanghai'
 

@@ -1,9 +1,9 @@
 {
-  "server": "yourhost",
+  "server": "YourHost",
   "server_port": 8443,
-  "local_address": "127.0.0.1",
+  "local_address": "0.0.0.0",
   "local_port": 1080,
-  "password": "YourPassword",
+  "password": "YourPasswd",
   "timeout": 300,
   "method": "chacha20",
   "fast_open": true,

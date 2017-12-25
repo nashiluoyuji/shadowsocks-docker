@@ -53,7 +53,5 @@ RUN apk upgrade --update \
         shadowsocks-libev-${SS_LIBEV_VERSION} \
         simple-obfs \
         /var/cache/apk/*
-
-ADD server.json /server.json
-
 CMD [ "ss-server", "-c","/server.json","-u"]
+

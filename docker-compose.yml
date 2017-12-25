@@ -6,7 +6,7 @@ services:
       - 443:443
       - 443:443/udp
     volumes:
-      - ./server.json/:/server.json
+      - ./server.json:/server.json
     command: [ "ss-server", "-c","/server.json","-u"]
     build: .
     container_name: ss-server
@@ -17,7 +17,7 @@ services:
       - 1080:1080
       - 1080:1080/udp
     volumes:
-      - ./client.json/:/client.json
+      - ./client.json:/client.json
     command: [ "ss-local", "-c","/client.json","-u"]
     build: .
     container_name: ss-local
@@ -28,7 +28,7 @@ services:
       - 1081:1080
       - 1081:1080/udp
     volumes:
-      - ./client.json/:/client.json
+      - ./client.json:/client.json
     command: [ "ss-redir", "-c","/client.json"]
     build: .
     container_name: ss-redir
@@ -39,7 +39,7 @@ services:
       - 5300:1080
       - 5300:1080/udp
     volumes:
-      - ./client.json/:/client.json
+      - ./client.json:/client.json
     command: [ "ss-tunnel", "-c","/client.json","-L","8.8.8.8:53","-u"]
     build: .
     container_name: ss-tunnel

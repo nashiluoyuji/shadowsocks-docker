@@ -4,10 +4,10 @@ shadowsocks+obfs的docker封装
 
 使用方法
 
-docker-cpmpose up server
+docker-compose up server
 
-docker-cpmpose up client
+docker-compose up local
 
-docker-cpmpose up redir
+docker-compose up redir
 
-docker-cpmpose up tunnel
+docker-compose up tunnel

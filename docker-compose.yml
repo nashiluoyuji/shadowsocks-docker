@@ -9,6 +9,7 @@ services:
       - ./server.json:/server.json
     command: [ "ss-server", "-c","/server.json","-u"]
     build: .
+    restart: always
     container_name: ss-server
 
   local:

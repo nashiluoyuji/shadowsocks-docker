@@ -1,10 +1,10 @@
 version: "2"
 services:
   server:
-    image: kaive/shadowsocks-libev
+    image: simply/shadowsocks-libev
     ports:
-      - 443:443
-      - 443:443/udp
+      - 10049:10049
+      - 10049:10049/udp
     volumes:
       - ./server.json:/server.json
     command: [ "ss-server", "-c","/server.json","-u"]
